@@ -58,8 +58,8 @@ image:
 ## BackupPC settings based on environment variables
 ## ref: https://hub.docker.com/r/adferrand/backuppc
 
-backuppcUuid: "0"
-backuppcGuid: "0"
+backuppcUuid: "1000"
+backuppcGuid: "1000"
 
 backuppcWebUser: backuppc
 backuppcWebPasswd: password
@@ -458,7 +458,7 @@ persistence:
 volumePermissions:
   ## @param volumePermissions.enabled Enable init container that changes the owner/group of the PV mount point to `runAsUser:fsGroup`
   ##
-  enabled: false
+  enabled: true
   ## Bitnami Shell image
   ## ref: https://hub.docker.com/r/bitnami/bitnami-shell/tags/
   ## @param volumePermissions.image.registry Bitnami Shell image registry

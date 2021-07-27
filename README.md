@@ -73,8 +73,8 @@ The command removes all the Kubernetes components associated with the chart and 
 
 | Name                                   | Description                                                                               | Value              |
 | -------------------------------------- | ----------------------------------------------------------------------------------------- | ------------------ |
-| `backuppcUuid`                         | BackupPC proccess UUID                                                                    | `0`                |
-| `backuppcGuid`                         | BackupPC proccess UUID                                                                    | `0`                |
+| `backuppcUuid`                         | BackupPC proccess UUID                                                                    | `1000`             |
+| `backuppcGuid`                         | BackupPC proccess UUID                                                                    | `1000`             |
 | `backuppcWebUser`                      | BackupPC Web Username                                                                     | `backuppc`         |
 | `backuppcWebPasswd`                    | BackupPC Web Password                                                                     | `password`         |
 | `tz`                                   | Timezone                                                                                  | `Europe/Paris`     |
@@ -171,7 +171,7 @@ The above parameters map to the env variables defined in docker image [environme
 | `persistence.size`                            | Persistent Volume size                                                                          | `10Gi`                  |
 | `persistence.dataSource`                      | Custom PVC data source                                                                          | `{}`                    |
 | `persistence.existingClaim`                   | The name of an existing PVC to use for persistence                                              | `nil`                   |
-| `volumePermissions.enabled`                   | Enable init container that changes the owner/group of the PV mount point to `runAsUser:fsGroup` | `false`                 |
+| `volumePermissions.enabled`                   | Enable init container that changes the owner/group of the PV mount point to `runAsUser:fsGroup` | `true`                  |
 | `volumePermissions.image.registry`            | Bitnami Shell image registry                                                                    | `docker.io`             |
 | `volumePermissions.image.repository`          | Bitnami Shell image repository                                                                  | `bitnami/bitnami-shell` |
 | `volumePermissions.image.tag`                 | Bitnami Shell image tag (immutable tags are recommended)                                        | `10`                    |
