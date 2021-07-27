@@ -1,0 +1,27 @@
+annotations:
+  category: BACKUP
+apiVersion: v2
+appVersion: 4.0.0-latest
+dependencies:
+- name: common
+  repository: https://charts.bitnami.com/bitnami
+  tags:
+  - bitnami-common
+  version: 1.x.x
+description: Backup tool.
+home: https://github.com/elmanytas/backuppc-kubernetes/tree/master/chart
+icon: http://backuppc.sourceforge.net/images/icons/BackupPC/mid/logo.gif
+keywords:
+- application
+- http
+- perl
+- web
+- backup
+- backuppc
+maintainers:
+- email: elmanytas@gmail.com
+  name: elmanytas
+name: backuppc
+sources:
+- https://backuppc.sourceforge.net/
+version: "0.0.1"
